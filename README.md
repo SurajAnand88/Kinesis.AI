@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AI Image Generation App</title>
+  <h1>AI Image Generation App</h1>
 </head>
 
 <body>
