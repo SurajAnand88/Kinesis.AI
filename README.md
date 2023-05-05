@@ -55,7 +55,7 @@ JWT_SECRET=&lt;your_jwt_secret_key&gt;
 
   <h2>License</h2>
 
-  <p>This project is licensed under the MIT License - see the <a href="LICENSE.md">LICENSE.md</a> file for details.</p>
+  <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE.md</a> file for details.</p>
 </body>
 
 </html>
