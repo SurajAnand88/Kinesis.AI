@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <h1>AI Image Generation App</h1>
+  <h1>Kinesis.AI</h1>
 </head>
 
 <body>
