@@ -17,6 +17,9 @@ dotenv.config();
 app.use(express.json({ limit: "50mb" }));
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("Hello from Kinesis.AI");
+});
 app.use("/api/v1/pearlai", pearlAi);
 app.use("/post", postRoute);
 app.use("/search", searchRoute);
