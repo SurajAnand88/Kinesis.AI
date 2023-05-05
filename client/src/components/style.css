@@ -1,0 +1,7 @@
+.img-head:hover .img-body {
+  top: 0;
+}
+
+.img-body {
+  transition: all 0.5s ease-in-out;
+}
