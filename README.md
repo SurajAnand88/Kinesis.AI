@@ -51,7 +51,7 @@ JWT_SECRET=&lt;your_jwt_secret_key&gt;
 
   <h2>Credits</h2>
 
-  <p>This project was developed by [Your Name] as part of a Full Stack Web Development course at [Your Institution]. Special thanks to [Instructor Name] for their guidance and support throughout the project.</p>
+  <p>This project was developed by Suraj Anand as part of a Full Stack Web Development course at Masai School. </p>
 
   <h2>License</h2>
 
