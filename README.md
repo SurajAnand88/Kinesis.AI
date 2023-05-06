@@ -34,7 +34,7 @@
     <li><strong>N</strong>ode.js: A JavaScript runtime environment used to build the app's backend server.</li>
   </ul>
 
-  <p>Other technologies used in the project include Chakra-UI for design components.</p>
+  <p>Other technologies used in the project include Chakra-UI for design components, Cloudinary to save images on the cloud, React Query to make network requests and much more.</p>
 
   <h2>Installation</h2>
 
