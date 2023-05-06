@@ -17,7 +17,7 @@
     <li>Dynamic image layout and hover effects that showcase the user's prompt to generate each AI-generated image.</li>
     <li>Download functionality that allows users to save the AI-generated images to their local devices.</li>
     <li>Search functionality that lets users search for specific AI-generated images.</li>
-    <li>Credit system that rewards users with credits for generating and sharing new AI-generated images.</li>
+    <li>Credit system that allow users with credits for generating and sharing new AI-generated images.</li>
     <li>Login and Signup functionality that ensures user privacy and security.</li>
     <li>Google Authentication that makes it easy for users to sign in and use the app.</li>
     <li>Dark Mode that enhances the app's aesthetics and usability.</li>
