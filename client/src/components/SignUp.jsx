@@ -31,7 +31,7 @@ const SignUp = ({ setSignUp, onClose, bg, clr, onClose2 }) => {
       ) {
         axios
           .post(
-            `http://localhost:3000/${
+            `https://kinesis-server.onrender.com/${
               response.profileObj ? "login" : "register"
             }`,
             response.profileObj ? response.profileObj : response

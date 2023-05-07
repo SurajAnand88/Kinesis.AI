@@ -1,5 +1,5 @@
 export default function loggedInUser(token) {
-  return fetch(`http://localhost:3000/loggedInUser`, {
+  return fetch(`https://kinesis-server.onrender.com/loggedInUser`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

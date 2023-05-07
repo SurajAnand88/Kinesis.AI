@@ -39,7 +39,7 @@ const Post = () => {
 
   const handleShare = () => {
     if (data && formData.name && formData.surprise) {
-      fetch("http://localhost:3000/post", {
+      fetch("https://kinesis-server.onrender.com/post", {
         method: "POST",
         headers: {
           // Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ const Post = () => {
 
   const fetcher = () => {
     if (formData.name && formData.surprise && user.credit > 0) {
-      return fetch("http://localhost:3000/api/v1/pearlai", {
+      return fetch("https://kinesis-server.onrender.com/api/v1/pearlai", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -137,7 +137,7 @@ const Post = () => {
         borderRadius={"10px"}
         p={3}
       >
-        Create imaginative and visually stunning images through Pearl.AI and
+        Create imaginative and visually stunning images through Kinesis.AI and
         share them with the community
       </Text>
 

@@ -18,7 +18,7 @@ const Login = ({ setSignUp, onClose, bg, clr, onClose2 }) => {
       if ((response.email && response.password) || response.profileObj) {
         axios
           .post(
-            "http://localhost:3000/login",
+            "https://kinesis-server.onrender.com/login",
             response.profileObj ? response.profileObj : response
           )
           .then(({ data }) => {
