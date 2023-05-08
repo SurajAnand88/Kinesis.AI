@@ -3,6 +3,9 @@ import React from "react";
 import "./style.css";
 import { DownloadIcon } from "@chakra-ui/icons";
 import { SaveAs, saveAs } from "file-saver";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 const SingleImage = ({ image }) => {
   const downloadImage = () => {
     saveAs(`${image.url}`, "image.png");
@@ -16,7 +19,13 @@ const SingleImage = ({ image }) => {
       w="100%"
       h="100%"
     >
-      <Image src={image.url} w="100%" h="100%" />
+      <LazyLoadImage
+        src={image.url}
+        effect="blur"
+        width={"100%"}
+        height={"100%"}
+        placeholderSrc="https://cdn.wallpapersafari.com/72/87/vJ7GMT.jpg"
+      />
 
       <Box
         pos={"absolute"}
