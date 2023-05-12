@@ -31,7 +31,7 @@ const SignUp = ({ setSignUp, onClose, bg, clr, onClose2 }) => {
       ) {
         axios
           .post(
-            `https://kinesis-server.onrender.com/${
+            `https://kinesis-server.vercel.app/${
               response.profileObj ? "login" : "register"
             }`,
             response.profileObj ? response.profileObj : response

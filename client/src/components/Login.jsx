@@ -18,7 +18,7 @@ const Login = ({ setSignUp, onClose, bg, clr, onClose2 }) => {
       if ((response.email && response.password) || response.profileObj) {
         axios
           .post(
-            "https://kinesis-server.onrender.com/login",
+            "https://kinesis-server.vercel.app/login",
             response.profileObj ? response.profileObj : response
           )
           .then(({ data }) => {

@@ -39,7 +39,7 @@ const Post = () => {
 
   const handleShare = () => {
     if (data && formData.name && formData.surprise) {
-      fetch("https://kinesis-server.onrender.com/post", {
+      fetch("https://kinesis-server.vercel.app/post", {
         method: "POST",
         headers: {
           // Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ const Post = () => {
 
   const fetcher = () => {
     if (formData.name && formData.surprise && user.credit > 0) {
-      return fetch("https://kinesis-server.onrender.com/api/v1/pearlai", {
+      return fetch("https://kinesis-server.vercel.app/api/v1/pearlai", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

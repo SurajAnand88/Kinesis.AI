@@ -22,7 +22,7 @@ const Home = () => {
   var id = useRef(null);
 
   const getData = () => {
-    fetch("https://kinesis-server.onrender.com/post")
+    fetch("https://kinesis-server.vercel.app/post")
       .then((res) => res.json())
       .then(({ data }) => setAllImages(data))
       .catch((err) => console.log(err));
@@ -43,7 +43,7 @@ const Home = () => {
         }
         id.current = setTimeout(async () => {
           const jsonData = await fetch(
-            `https://kinesis-server.onrender.com/search?q=${e.target.value}`
+            `https://kinesis-server.vercel.app/search?q=${e.target.value}`
           );
           const { data } = await jsonData.json();
           setAllImages(data);
