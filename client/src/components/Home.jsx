@@ -30,7 +30,7 @@ const Home = () => {
 
   useEffect(() => {
     getData();
-  }, []);
+  });
 
   const debounceSearch = async (e) => {
     try {

@@ -15,7 +15,6 @@ const SingleImage = ({ image }) => {
       pos={"relative"}
       overflow={"hidden"}
       className="img-head"
-      borderRadius={"10px"}
       w="100%"
       h="100%"
     >
@@ -24,6 +23,7 @@ const SingleImage = ({ image }) => {
         effect="blur"
         width={"100%"}
         height={"100%"}
+        style={{ borderRadius: "10px" }}
         placeholderSrc="https://cdn.wallpapersafari.com/72/87/vJ7GMT.jpg"
       />
 
@@ -47,6 +47,7 @@ const SingleImage = ({ image }) => {
               h={"30px"}
               w={"30px"}
               borderRadius={"50%"}
+              borderBottomRadius={"50%"}
               alignContent={"center"}
               fontSize={"16px"}
             >
