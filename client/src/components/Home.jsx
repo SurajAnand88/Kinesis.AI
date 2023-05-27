@@ -106,9 +106,9 @@ const Home = () => {
         {allImages?.map((image, i) => {
           return (
             <GridItem
-              rowSpan={{ base: 4, sm: 1, md: i % 3 === 0 ? 2 : 1 }}
+              rowSpan={{ base: 4, sm: 1, lg: i % 3 === 0 ? 2 : 1 }}
               key={i}
-              colSpan={{ base: 4, sm: 2, md: i % 3 === 0 ? 2 : 1 }}
+              colSpan={{ base: 4, sm: 2, lg: i % 3 === 0 ? 2 : 1 }}
             >
               <SingleImage image={image} />
             </GridItem>
