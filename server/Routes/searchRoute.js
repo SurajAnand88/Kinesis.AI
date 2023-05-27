@@ -10,6 +10,7 @@ router.route("/").get(async (req, res) => {
     const images = await Images.find({
       Text: { $regex: `${q}`, $options: "i" },
     });
+
     res.status(200).json({
       data: images,
     });

@@ -30,7 +30,7 @@ const Home = () => {
 
   useEffect(() => {
     getData();
-  });
+  }, []);
 
   const debounceSearch = async (e) => {
     try {
@@ -72,7 +72,9 @@ const Home = () => {
         <Flex align={"center"} gap={3}>
           <Flex align={"center"} gap={1}>
             <BsFilterCircleFill color="red" />
-            <Text fontWeight={"bold"}>Recent</Text>
+            <Text fontWeight={"bold"} onClick={getData}>
+              Recent
+            </Text>
           </Flex>
           <Flex align={"center"}>
             {/* <AiOutlineStar />

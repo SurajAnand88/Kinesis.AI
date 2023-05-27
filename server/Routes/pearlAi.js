@@ -28,16 +28,16 @@ router.route("/").post(async (req, res) => {
         let user = await User.findOne({ _id: _id });
         console.log(user, authorization, token);
         if (user.credit > 0) {
+          user = await User.updateOne(
+            { _id: user._id },
+            { $set: { credit: user.credit - 1 } }
+          );
           const response = await openai.createImage({
             prompt: text,
             n: 1,
             size: "1024x1024",
             response_format: "b64_json",
           });
-          user = await User.updateOne(
-            { _id: user._id },
-            { $set: { credit: user.credit - 1 } }
-          );
 
           const img = response.data.data[0].b64_json;
           res.status(200).json({ photo: img });
